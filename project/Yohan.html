@@ -1,353 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>이요한의 자기소개서</title>
+    <title>Yohan's introduction</title>
     <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-html, body {
-    margin: 0;
-    padding: 0;
-}
+        #background {
+            position: absolute;
+            width: 1920px;
+            height: 1080px;
+            background: #060606;
+        }
 
-#background{       
-    position: absolute;
-    width: 1920px;
-    height: 1080px;
-    background: #060606;
-    }
+        #edge1 {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 0px;
+            top: 0px;
+            background: #FFFFFF;
+        }
 
-    #edge1{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 0px;
-    top: 0px;
-    background: #FFFFFF;
-    }
-    #edge2{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 1890px;
-    top: 0px;
-    background: #FFFFFF;
-    }
+        #edge2 {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 1890px;
+            top: 0px;
+            background: #FFFFFF;
+        }
 
-    #edge3{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 0px;
-    top: 1050px;
-    background: #FFFFFF;
-    }
+        #edge3 {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 0px;
+            top: 1050px;
+            background: #FFFFFF;
+        }
 
-    #edge4{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 1890px;
-    top: 1050px;
-    background: #FFFFFF;
-    }
+        #edge4 {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 1890px;
+            top: 1050px;
+            background: #FFFFFF;
+        }
 
-    #frame{
-    position: absolute;
-    width: 1920px;
-    height: 3px;
-    left: 0px;
-    top: 30px;
-    background: #FFFFFF;
-    }
+        #frame {
+            position: absolute;
+            width: 1920px;
+            height: 3px;
+            left: 0px;
+            top: 30px;
+            background: #FFFFFF;
+        }
 
-    #frame2{
-    position: absolute;
-    width: 1920px;
-    height: 3px;
-    left: 0px;
-    top: 1047px;
-    background: #FFFFFF;
-    }
-    #frame3{
-    position: absolute;
-    width: 3px;
-    height: 1080px;
-    left: 30px;
-    top: 0px;
-    background: #FFFFFF;
-    }
-    
-    #frame4{
-    position: absolute;
-    width: 3px;
-    height: 1080px;
-    left: 1887px;
-    top: 0px;
-    background: #FFFFFF;
-    }
+        #frame2 {
+            position: absolute;
+            width: 1920px;
+            height: 3px;
+            left: 0px;
+            top: 1047px;
+            background: #FFFFFF;
+        }
 
-    #frame5{
-    position: absolute;
-    width: 3px;
-    height: 1020px;
-    left: 690px;
-    top: 30px;
-    background: #FFFFFF;
-    }
+        #frame3 {
+            position: absolute;
+            width: 3px;
+            height: 1080px;
+            left: 30px;
+            top: 0px;
+            background: #FFFFFF;
+        }
 
-    #frame6{
-    position: absolute;
-    width: 3px;
-    height: 1020px;
-    left: 1228px;
-    top: 30px;
-    background: #FFFFFF;
-    }
+        #frame4 {
+            position: absolute;
+            width: 3px;
+            height: 1080px;
+            left: 1887px;
+            top: 0px;
+            background: #FFFFFF;
+        }
 
-    #exp_main{
-    position: absolute;
-    width: 480px;
-    height: 1080px;
-    left: 720px;
-    top: 0px;
-    background: #FFFFFF;
-    }
+        #frame5 {
+            position: absolute;
+            width: 3px;
+            height: 1020px;
+            left: 690px;
+            top: 30px;
+            background: #FFFFFF;
+        }
 
-    #exp_frame1{
-    position: absolute;
-    width: 480px;
-    height: 3px;
-    left: 720px;
-    top: 30px;
-    background: #0F0E0E;
-    }
-    
-    #exp_frame2{
-    position: absolute;
-    width: 480px;
-    height: 3px;
-    left: 720px;
-    top: 1047px;
-    background: #0F0E0E;
-    }
+        #frame6 {
+            position: absolute;
+            width: 3px;
+            height: 1020px;
+            left: 1228px;
+            top: 30px;
+            background: #FFFFFF;
+        }
 
-    #exp_photo{
-    position: absolute;
-    width: 420px;
-    height: 420px;
-    border-radius: 50%;
-    left: 749px;
-    top: 81px;
-    background: #B0B0B0;
-    mix-blend-mode: normal;
-    border: 15px solid #000000;
-    box-sizing: border-box;
-    }
-    #exp_name1{
-    position: absolute;
-    width: 426px;
-    height: 3px;
-    left: 747px;
-    top: 549px;
-    background: #0F0E0E;
+        #exp_main {
+            position: absolute;
+            width: 480px;
+            height: 1080px;
+            left: 720px;
+            top: 0px;
+            background: #FFFFFF;
+        }
 
-    }
-    #exp_name2{
-    position: absolute;
-    width: 426px;
-    height: 3px;
-    left: 747px;
-    top: 632px;
-    background: #0F0E0E;
+        #exp_frame1 {
+            position: absolute;
+            width: 480px;
+            height: 3px;
+            left: 720px;
+            top: 30px;
+            background: #0F0E0E;
+        }
 
-    }
+        #exp_frame2 {
+            position: absolute;
+            width: 480px;
+            height: 3px;
+            left: 720px;
+            top: 1047px;
+            background: #0F0E0E;
+        }
 
-    #name{
-    position: absolute;
-    width: 181px;
-    height: 68px;
-    left: 869px;
-    top: 556px;
+        #exp_photo {
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            border-radius: 50%;
+            left: 749px;
+            top: 81px;
+            background: #B0B0B0;
+            mix-blend-mode: normal;
+            border: 15px solid #000000;
+            box-sizing: border-box;
+        }
 
-    font-family: Martel Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 88px;
-    text-align: center;
+        #exp_name1 {
+            position: absolute;
+            width: 426px;
+            height: 3px;
+            left: 747px;
+            top: 549px;
+            background: #0F0E0E;
 
-    color: #000000;
-    }
+        }
 
-    #pic1{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 752px;
-    top: 894px;
+        #exp_name2 {
+            position: absolute;
+            width: 426px;
+            height: 3px;
+            left: 747px;
+            top: 632px;
+            background: #0F0E0E;
 
-    background: url(pngwing 1.png);
-    }
+        }
 
-    #git{
-    position: absolute;
-    width: 177px;
-    height: 44px;
-    left: 930px;
-    top: 819px;
+        #name {
+            position: absolute;
+            width: 181px;
+            height: 68px;
+            left: 869px;
+            top: 556px;
 
-    font-family: Martel Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 44px;
+            font-family: Martel Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 48px;
+            line-height: 88px;
+            text-align: center;
 
-    color: #000000;
-    }
-    
-    #pic2{
-    position: absolute;
-    width: 90px;
-    height: 30px;
-    left: 747px;
-    top: 826px;
+            color: #000000;
+        }
 
-    background: url(pngwing 2.png);
-    }
+        #pic1 {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            left: 752px;
+            top: 894px;
 
-    #phonenumber{
-    position: absolute;
-    width: 166px;
-    height: 22px;
-    left: 925px;
-    top: 913px;
+            background: url(pngwing_1.png);
+        }
 
-    font-family: Martel Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 44px;
+        #git {
+            position: absolute;
+            width: 177px;
+            height: 44px;
+            left: 930px;
+            top: 819px;
 
-    color: #000000;
-    }
+            font-family: Martel Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 44px;
 
-    #pic3{ 
-    position: absolute;
-    width: 60px;
-    height: 40px;
-    left: 752px;
-    top: 987px;
+            color: #000000;
+        }
 
-    background: url(pngwing 3.png);
-    }
+        #pic2 {
+            position: absolute;
+            width: 90px;
+            height: 30px;
+            left: 747px;
+            top: 826px;
 
-    #email{
-    position: absolute;
-    width: 290px;
-    height: 25px;
-    left: 861px;
-    top: 994px;
+            background: url(pngwing_2.png);
+        }
 
-    font-family: Martel Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 44px;
+        #phonenumber {
+            position: absolute;
+            width: 166px;
+            height: 22px;
+            left: 925px;
+            top: 913px;
 
-    color: #000000;
-    }
-    #L_top{
-    position: absolute;
-    width: 209px;
-    height: 216px;
-    left: 69px;
-    top: 277px;
+            font-family: Martel Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 44px;
 
-    font-family: Martel Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 55px;
+            color: #000000;
+        }
 
-    color: #FFFFFF;
-    }
+        #pic3 {
+            position: absolute;
+            width: 60px;
+            height: 40px;
+            left: 752px;
+            top: 987px;
 
-    #L_mid{
-    position: absolute;
-    width: 195px;
-    height: 201px;
-    left: 69px;
-    top: 523px;
+            background: url(pngwing_3.png);
+        }
 
-    font-family: Martel Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 55px;
+        #email {
+            position: absolute;
+            width: 290px;
+            height: 25px;
+            left: 861px;
+            top: 994px;
 
-    color: #FFFFFF;
-    }
-    #L_bot{
-    position: absolute;
-    width: 500px;
-    height: 263px;
-    left: 69px;
-    top: 754px;
+            font-family: Martel Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 44px;
 
-    font-family: Martel Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 55px;
+            color: #000000;
+        }
 
-    color: #FFFFFF;
-    }
-    #R_1{
-    position: absolute;
-    width: 249px;
-    height: 101px;
-    left: 1268px;
-    top: 624px;
+        #L_top {
+            position: absolute;
+            width: 209px;
+            height: 216px;
+            left: 69px;
+            top: 277px;
 
-    font-family: Martel Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 55px;
+            font-family: Martel Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 55px;
 
-    color: #FFFFFF;
-    }
-    #R_2{
-    position: absolute;
-    width: 534px;
-    height: 268px;
-    left: 1268px;
-    top: 749px;
+            color: #FFFFFF;
+        }
 
-    font-family: Martel Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 55px;
+        #L_mid {
+            position: absolute;
+            width: 195px;
+            height: 201px;
+            left: 69px;
+            top: 523px;
 
-    color: #FFFFFF;
-    }
-    #prof{
-    position: absolute;
-    width: 363px;
-    height: 368px;
-    left: 778px;
-    top: 107px;
+            font-family: Martel Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 55px;
 
-    background: url(prof.png);
-    
-    }
-    
-    
-</style>
+            color: #FFFFFF;
+        }
+
+        #L_bot {
+            position: absolute;
+            width: 500px;
+            height: 263px;
+            left: 69px;
+            top: 754px;
+
+            font-family: Martel Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 55px;
+
+            color: #FFFFFF;
+        }
+
+        #R_1 {
+            position: absolute;
+            width: 249px;
+            height: 101px;
+            left: 1268px;
+            top: 624px;
+
+            font-family: Martel Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 55px;
+
+            color: #FFFFFF;
+        }
+
+        #R_2 {
+            position: absolute;
+            width: 534px;
+            height: 268px;
+            left: 1268px;
+            top: 749px;
+
+            font-family: Martel Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 55px;
+
+            color: #FFFFFF;
+        }
+
+        #prof {
+            position: absolute;
+            width: 363px;
+            height: 368px;
+            left: 778px;
+            top: 107px;
+
+            background: url(prof.png);
+
+        }
+    </style>
+
 </head>
+
 <body>
-    
+
     <div id="background"></div>
     <div id="edge1"></div>
     <div id="edge2"></div>
@@ -360,23 +370,26 @@ html, body {
     <div id="frame5"></div>
     <div id="frame6"></div>
     <div id="exp_main"></div>
-    <div id="exp_frame1"></div>  
-    <div id="exp_frame2"></div> 
-    <div id="exp_photo"></div> 
-    <div id="exp_name1"></div> 
-    <div id="exp_name2"></div> 
-    <div id="name">이 요 한</div> 
-    <img id="pic1" src= "pngwing 1.png" >
-    <div id="git">@yohanlee3184</div> 
-    <img id ="pic2" src="pngwing 2.png">
-    <div id="phonenumber">010-8315-7192</div> 
-    <img id ="pic3" src="pngwing 3.png">
-    <div id="email">john1111369@gmail.com</div> 
-    <div id="L_top">버킷리스트 <br>&nbsp;1. 유학가기<br>&nbsp;2. 연구원 되기<br>&nbsp;3. 부자되기</div> 
-    <div id="L_mid">좋아하는 음식 <br>&nbsp;1. 냉면<br>&nbsp;2. 보쌈<br>&nbsp;3. 막창</div> 
+    <div id="exp_frame1"></div>
+    <div id="exp_frame2"></div>
+    <div id="exp_photo"></div>
+    <div id="exp_name1"></div>
+    <div id="exp_name2"></div>
+    <div id="name">이 요 한</div>
+    <img id="pic1" src="pngwing 1.png">
+    <div id="git">@yohanlee3184</div>
+    <img id="pic2" src="pngwing 2.png">
+    <div id="phonenumber">010-8315-7192</div>
+    <img id="pic3" src="pngwing 3.png">
+    <div id="email">john1111369@gmail.com</div>
+    <div id="L_top">버킷리스트 <br>&nbsp;1. 유학가기<br>&nbsp;2. 연구원 되기<br>&nbsp;3. 부자되기</div>
+    <div id="L_mid">좋아하는 음식 <br>&nbsp;1. 냉면<br>&nbsp;2. 보쌈<br>&nbsp;3. 막창</div>
     <div id="L_bot">취미 <br>&nbsp;1. 웹툰 보기<br>&nbsp;2. 계획 세우기<br>&nbsp;3. 음악 듣기<br>&nbsp;4. 한수진님 바이올린 공연 보러가기</div>
-    <div id="R_1">좌우명 <br>&nbsp;Victor Lucet Alis</div> 
-    <div id="R_2">가치관 <br>&nbsp;a. 어제보다, 더<br>&nbsp;b. 진리를 탐구하자<br>&nbsp;c. 단순하지만 강력하게 행동하자<br>&nbsp;d. 정해진 대로 행동하자</div>  
-    <img id="prof" src= "prof.png" >
+    <div id="R_1">좌우명 <br>&nbsp;Victor Lucet Alis</div>
+    <div id="R_2">가치관 <br>&nbsp;a. 어제보다, 더<br>&nbsp;b. 진리를 탐구하자<br>&nbsp;c. 단순하지만 강력하게 행동하자<br>&nbsp;d. 정해진 대로 행동하자
+    </div>
+    <img id="prof" src="prof.png">
+
 </body>
+
 </html>

@@ -141,7 +141,7 @@
             border-radius: 50%;
             left: 749px;
             top: 81px;
-            background: #B0B0B0;
+            background: #ffffff;
             mix-blend-mode: normal;
             border: 15px solid #000000;
             box-sizing: border-box;
@@ -352,6 +352,31 @@
             background: url(prof.png);
 
         }
+
+        #Day {
+            position: absolute;
+            width: 110px;
+            height: 110px;
+            left: 1764px;
+            top: 56px;
+            background: black;
+            border: 0;
+            outline: 0;
+
+        
+        }
+
+        #pic_star{
+
+            position: absolute;
+            width: 1710px;
+            height: 730px;
+            left: 60px;
+            top: 48px;
+
+
+        }
+        
     </style>
 
 </head>
@@ -390,6 +415,118 @@
     </div>
     <img id="prof" src="prof.png">
 
+    <img id="pic_star" src="Group 3.png">
+
+
+    <button type="button" id="Day" onclick="invert()"><img id=moon src="Moon.png"></button>
+    
+
+    <script>
+
+         var count = 1;
+         
+        function invert(){
+
+        
+           if (count==1){
+            document.getElementById("background").style.background = "white";
+            document.getElementById("edge1").style.background = "black";
+            document.getElementById("edge2").style.background = "black";
+            document.getElementById("edge3").style.background = "black";
+            document.getElementById("edge4").style.background = "black";
+            document.getElementById("frame").style.background = "black";
+            document.getElementById("frame2").style.background = "black";
+            document.getElementById("frame3").style.background = "black";
+            document.getElementById("frame4").style.background = "black";
+            document.getElementById("frame5").style.background = "black";
+            document.getElementById("frame6").style.background = "black";
+            document.getElementById("exp_main").style.background = "black";
+            document.getElementById("exp_frame1").style.background = "white";
+            document.getElementById("exp_frame2").style.background = "white";
+            document.getElementById("exp_photo").style.border = "15px solid white";
+            document.getElementById("exp_photo").style.background = "black";
+            document.getElementById("exp_name1").style.background = "white";
+            document.getElementById("exp_name2").style.background = "white";
+            document.getElementById("name").style.color = "white";
+            document.getElementById("git").style.color = "white";
+            document.getElementById("phonenumber").style.color = "white";
+            document.getElementById("email").style.color = "white";
+            document.getElementById("pic1").style.filter = "invert(100%)";
+            document.getElementById("pic2").style.filter = "invert(100%)";
+            document.getElementById("pic3").style.filter = "invert(100%)";
+            document.getElementById("L_top").style.color = "black";
+            document.getElementById("L_mid").style.color = "black";
+            document.getElementById("L_bot").style.color = "black";
+            document.getElementById("R_1").style.color = "black";
+            document.getElementById("R_2").style.color = "black";
+            document.getElementById("Day").style.background = "white";
+            document.getElementById("moon").src = "Sun.png";
+            document.getElementById("pic_star").src = "Group 4.png";
+            document.getElementById("pic_star").style.width = "1222px";
+            document.getElementById("pic_star").style.height = "216.24px";
+            document.getElementById("pic_star").style.left = "346px";
+            document.getElementById("pic_star").style.top = "107px";
+
+
+            
+            count = 0;
+           }
+
+else{
+           document.getElementById("background").style.background = "black";
+            document.getElementById("edge1").style.background = "white";
+            document.getElementById("edge2").style.background = "white";
+            document.getElementById("edge3").style.background = "white";
+            document.getElementById("edge4").style.background = "white";
+            document.getElementById("frame").style.background = "white";
+            document.getElementById("frame2").style.background = "white";
+            document.getElementById("frame3").style.background = "white";
+            document.getElementById("frame4").style.background = "white";
+            document.getElementById("frame5").style.background = "white";
+            document.getElementById("frame6").style.background = "white";
+            document.getElementById("exp_main").style.background = "white";
+            document.getElementById("exp_frame1").style.background = "black";
+            document.getElementById("exp_frame2").style.background = "black";
+            document.getElementById("exp_photo").style.border = "15px solid black";
+            document.getElementById("exp_photo").style.background = "white";
+            document.getElementById("exp_name1").style.background = "black";
+            document.getElementById("exp_name2").style.background = "black";
+            document.getElementById("name").style.color = "black";
+            document.getElementById("git").style.color = "black";
+            document.getElementById("phonenumber").style.color = "black";
+            document.getElementById("email").style.color = "black";
+            document.getElementById("pic1").style.filter = "invert(0%)";
+            document.getElementById("pic2").style.filter = "invert(0%)";
+            document.getElementById("pic3").style.filter = "invert(0%)";
+            document.getElementById("L_top").style.color = "white";
+            document.getElementById("L_mid").style.color = "white";
+            document.getElementById("L_bot").style.color = "white";
+            document.getElementById("R_1").style.color = "white";
+            document.getElementById("R_2").style.color = "white";
+            document.getElementById("Day").style.background = "black";
+            document.getElementById("moon").src = "Moon.png";
+            document.getElementById("pic_star").src = "Group 3.png";
+            document.getElementById("pic_star").style.width = "1710px";
+            document.getElementById("pic_star").style.height = "730px";
+            document.getElementById("pic_star").style.left = "60px";
+            document.getElementById("pic_star").style.top = "48px";
+
+count=1;
+        }
+           
+        }
+
+    function setColor(btn, color) {
+        var property = document.getElementById(btn);
+       
+    }
+        
+        
+    </script>
+
+    
 </body>
 
 </html>
+
+

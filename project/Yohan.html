@@ -394,45 +394,73 @@
 
 <body>
 
-    <div id="background"></div>
-    <div id="edge1"></div>
-    <div id="edge2"></div>
-    <div id="edge3"></div>
-    <div id="edge4"></div>
-    <div id="frame"></div>
-    <div id="frame2"></div>
-    <div id="frame3"></div>
-    <div id="frame4"></div>
-    <div id="frame5"></div>
-    <div id="frame6"></div>
-    <div id="exp_main"></div>
-    <div id="exp_frame1"></div>
-    <div id="exp_frame2"></div>
-    <div id="exp_photo"></div>
-    <div id="exp_name1"></div>
-    <div id="exp_name2"></div>
-    <div id="name">이 요 한</div>
-    <img id="pic1" src="pngwing 1.png">
-    <div id="git">@yohanlee3184</div>
-    <img id="pic2" src="pngwing 2.png">
-    <div id="phonenumber">010-8315-7192</div>
-    <img id="pic3" src="pngwing 3.png">
-    <div id="email">john1111369@gmail.com</div>
-    <div id="L_top">버킷리스트 <br>&nbsp;1. 유학가기<br>&nbsp;2. 연구원 되기<br>&nbsp;3. 부자되기</div>
-    <div id="L_mid">좋아하는 음식 <br>&nbsp;1. 냉면<br>&nbsp;2. 보쌈<br>&nbsp;3. 막창</div>
-    <div id="L_bot">취미 <br>&nbsp;1. 웹툰 보기<br>&nbsp;2. 계획 세우기<br>&nbsp;3. 음악 듣기<br>&nbsp;4. 한수진님 바이올린 공연 보러가기</div>
-    <div id="R_1">좌우명 <br>&nbsp;Victor Lucet Alis</div>
-    <div id="R_2">가치관 <br>&nbsp;a. 어제보다, 더<br>&nbsp;b. 진리를 탐구하자<br>&nbsp;c. 단순하지만 강력하게 행동하자<br>&nbsp;d. 정해진 대로 행동하자
+    <div class="background">
+
+        <div id="background"></div>
+
+        <div class="edge">
+            <div id="edge1"></div>
+            <div id="edge2"></div>
+            <div id="edge3"></div>
+            <div id="edge4"></div>
+        </div>
+
+        <div class="frame">
+            <div id="frame"></div>
+            <div id="frame2"></div>
+            <div id="frame3"></div>
+            <div id="frame4"></div>
+            <div id="frame5"></div>
+            <div id="frame6"></div>
+        </div>
+
+        <div class="Day_change">
+            <button type="button" id="Day" onclick="invert()"><img id=moon src="Moon.png"></button>
+            <img id="pic_star" src="Group 3.png">
+        </div>
+
     </div>
-    <img id="prof" src="prof.png">
 
-    <img id="pic_star" src="Group 3.png">
+    <div class="explain">
+
+        <div id="exp_main"></div>
+        <div id="exp_frame1"></div>
+        <div id="exp_frame2"></div>
+        <div id="exp_photo"></div>
+        <div id="exp_name1"></div>
+        <div id="exp_name2"></div>
+        <div id="name">이 요 한</div>
+        <img id="pic1" src="pngwing 1.png">
+        <div id="git">@yohanlee3184</div>
+        <img id="pic2" src="pngwing 2.png">
+        <div id="phonenumber">010-8315-7192</div>
+        <img id="pic3" src="pngwing 3.png">
+        <div id="email">john1111369@gmail.com</div>
+        <img id="prof" src="prof.png">
+
+        <button type="home" id="home_b" onclick="location.href='main.html';"></button>
+
+    </div>
+
+    <div class="Left">
+
+        <div id="L_top">버킷리스트 <br>&nbsp;1. 유학가기<br>&nbsp;2. 연구원 되기<br>&nbsp;3. 부자되기</div>
+        <div id="L_mid">좋아하는 음식 <br>&nbsp;1. 냉면<br>&nbsp;2. 보쌈<br>&nbsp;3. 막창</div>
+        <div id="L_bot">취미 <br>&nbsp;1. 웹툰 보기<br>&nbsp;2. 계획 세우기<br>&nbsp;3. 음악 듣기<br>&nbsp;4. 한수진님 바이올린 공연 보러가기</div>
+
+    </div>
+
+    <div class="Right">
+
+        <div id="R_1">좌우명 <br>&nbsp;Victor Lucet Alis</div>
+        <div id="R_2">가치관 <br>&nbsp;a. 어제보다, 더<br>&nbsp;b. 진리를 탐구하자<br>&nbsp;c. 단순하지만 강력하게 행동하자<br>&nbsp;d. 정해진 대로 행동하자
+        </div>
+
+    </div>
 
 
 
-
-    <button type="button" id="Day" onclick="invert()"><img id=moon src="Moon.png"></button>
-    <button type="home" id="home_b" onclick="location.href='main.html';"></button>
+    
 
     <script>
 
@@ -479,7 +507,7 @@
                 document.getElementById("pic_star").style.height = "216.24px";
                 document.getElementById("pic_star").style.left = "346px";
                 document.getElementById("pic_star").style.top = "107px";
-                document.getElementById("home_b").style.filter ="invert(100%)"
+                document.getElementById("home_b").style.filter = "invert(100%)"
 
 
 
@@ -524,7 +552,7 @@
                 document.getElementById("pic_star").style.height = "730px";
                 document.getElementById("pic_star").style.left = "60px";
                 document.getElementById("pic_star").style.top = "48px";
-                document.getElementById("home_b").style.filter ="invert(0%)"
+                document.getElementById("home_b").style.filter = "invert(0%)"
 
                 count = 1;
             }
